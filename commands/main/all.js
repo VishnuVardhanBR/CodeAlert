@@ -12,8 +12,9 @@ module.exports = {
 
 		// Filter the contests based on the specified sites and within the next 7 days
 		const filteredContests = contests.filter(c =>
-		  ['LeetCode', 'CodeForces', 'CodeChef'].includes(c.site) &&
-		  isWithinNextWeek(new Date(c.start_time))
+		  (['LeetCode', 'CodeForces'].includes(c.site) || (c.site == 'CodeChef' && c.url.includes("START"))) &&
+		  isWithinNextWeek(new Date(c.start_time)
+		  )
 		);
 
 		// Build a string with the names and dates of the contests
@@ -21,7 +22,7 @@ module.exports = {
 		  const startTime = new Date(c.start_time);
 		  const startTimeIST = new Date(startTime.getTime());
 		  const formattedDate = startTimeIST.toLocaleString('en-US', { timeZone: 'Asia/Kolkata', dateStyle: 'long', timeStyle: 'short' });
-		  return `${i+1}. ${c.name} - ${formattedDate} IST\nLink: <${c.url}>\n\n`;
+		  return `${i+1}. ${c.name} - ${formattedDate} IST\n   Link: <${c.url}>\n\n`;
 		}).join('');
 
 		await interaction.reply(`**Upcoming contests for the this week:**\n\n${contestInfo}`);
