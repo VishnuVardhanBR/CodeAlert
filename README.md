@@ -58,4 +58,4 @@ node index.js
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://chat.openai.com/chat/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/VishnuVardhanBR/CodeAlert/blob/main/LICENSE) file for details.
