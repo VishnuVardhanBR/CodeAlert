@@ -2,6 +2,8 @@
 
 A Discord bot that retrieves a list of coding contests from an API and displays them in Discord channels using slash commands.
 
+If you're interested, please check out the [Code Alert Alexa Skill](https://github.com/VishnuVardhanBR/CodeAlertAlexaSkill), with which you can access the same functionality from your Alexa device.
+
 ## Usage
 
 To use the bot, invite it to your Discord server using this [link](https://discord.com/api/oauth2/authorize?client_id=1091688367109967992&permissions=2147483648&scope=bot
