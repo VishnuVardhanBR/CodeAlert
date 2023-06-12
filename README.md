@@ -1,6 +1,7 @@
 # CodeAlert
 
 A Discord bot that retrieves a list of coding contests from an API and displays them in Discord channels using slash commands.
+
 [Video Demo](https://youtu.be/Xec3wMYwdkA)
 
 If you're interested, please check out the [Code Alert Alexa Skill](https://github.com/VishnuVardhanBR/CodeAlertAlexaSkill), with which you can access the same functionality from your Alexa device.
